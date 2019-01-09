@@ -1,0 +1,26 @@
+{
+  "name": "douban-trainers",
+  "version": "1.0.0",
+  "description": "an app for movie",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanlikecoding/douban-trainer.git"
+  },
+  "keywords": [
+    "movie"
+  ],
+  "author": "Jean",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeanlikecoding/douban-trainer/issues"
+  },
+  "homepage": "https://github.com/jeanlikecoding/douban-trainer#readme",
+  "dependencies": {
+    "koa": "^2.6.2"
+  }
+}
