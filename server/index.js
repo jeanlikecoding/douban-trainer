@@ -1,9 +1,10 @@
 const Koa = require('koa')
 const app = new Koa()
+const tpl = require('./tpl')
 
 app.use(async ctx => {
-  ctx.status = 200
-  ctx.body = 'hello Movie'
+  ctx.type = "text/html, charset=utf-8"
+  ctx.body = tpl.normal
 })
 
 app.listen(3333, () => {
