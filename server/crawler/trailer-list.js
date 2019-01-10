@@ -38,7 +38,7 @@ const sleep = time => new Promise(resolve => {
         let it = $(item)
         let doubanId = it.find('div').data('id')
         let title = it.find('.title').text()
-        let rate = it.find('.rate').text()
+        let rate = Number(it.find('.rate').text())
         let poster = it.find('img').attr('src').replace('s_ratio', 'l_ratio')
         links.push({
           doubanId,
@@ -54,6 +54,6 @@ const sleep = time => new Promise(resolve => {
 
   browser.close()
 
-  console.log(result)
-
+  process.send({result})
+  process.exit(0)
 })()
